@@ -1,0 +1,72 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Kaisei+Opti:700");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 5vmax;
+  top: 0;
+  background-color: rgba(256, 256, 256, 0.95);
+  border-bottom: 0.1vmax solid rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 10;
+}
+
+
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FDEFE5;
+}
+
+.title-text-h1 {
+  font-family: "Hiragino Kaku Gothic ProN-W6", Helvetica;
+  font-weight: 400;
+  font-size: 3.5vmax;
+  color: #000000;
+  letter-spacing: 0;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.description-text {
+  font-family: "Toppan Bunkyu Gothic", Helvetica;
+  color: #000000;
+  font-size: 1.3vmax;
+  letter-spacing: 0;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  height: 5vmax;
+  bottom: 0;
+  background-color: rgba(256, 256, 256, 0.95);
+  border-top: 0.1vmax solid rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 10;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) { /* resoponsible design */
+
+}

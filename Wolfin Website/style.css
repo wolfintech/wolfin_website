@@ -1,0 +1,681 @@
+header .logo {
+  height: 100%;
+}
+
+header #top-logo {
+  margin: auto 1% auto;
+  height: 40%;
+}
+
+header .text-wrapper-inquiry {
+  margin: auto 2% auto auto;
+  padding: 1em 0.7em;
+  border-radius: 0.5em;
+  font-size: 1.0vmax;
+  color: #000000;
+  font-family: "Toppan Bunkyu Gothic";
+}
+
+header .text-wrapper-inquiry:hover {
+  padding: 1em 0.7em;
+  border-radius: 0.5em;
+  background-color: rgba(255, 184, 0, 0.1);
+}
+
+header .text-wrapper-waitlist {
+  margin: auto 2% auto 0;
+  padding: 1em 0.7em;
+  border-radius: 0.5em;
+  font-size: 0.9vmax;
+  color: #ffffff;
+  font-family: "Toppan Bunkyu Midashi Gothic";
+  background-color: rgb(255, 183, 0);
+}
+
+header .text-wrapper-waitlist:hover {
+	background-position: right center;
+	background-size: 200% auto;
+	-webkit-animation: pulse 2s infinite;
+	animation: shad26 1.5s infinite;
+	color: #fff;
+}
+
+@keyframes shad26 {
+	0% {box-shadow: 0 0 0 0 #27acd9;}
+	70% {box-shadow: 0 0 0 10px rgb(39 172 217 / 0%);}
+	100% {box-shadow: 0 0 0 0 rgb(39 172 217 / 0%);}
+}
+
+.block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.block .description-block {
+  position: relative;
+  width: 40%;
+
+}
+
+.block .image-block {
+  width: 60%;
+  position: relative;
+}
+
+.block .title-text-h1 {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+
+.block .description-text {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+}
+ 
+.block .start-button {
+  text-decoration: none;
+  position: absolute;
+  top: 74%;
+  left: 20%;
+  margin: auto 2% auto 0;
+  padding: 1em 3em;
+  border-radius: 0.5em;
+  font-size: 1vmax;
+  color: #ffffff;
+  font-family: "Toppan Bunkyu Midashi Gothic";
+  background-color: #7FE3F7;
+  border: 0.1vmax solid #000000;
+  box-shadow: 0 0.5vmax #2c6470;  
+}
+
+.block .start-button:hover {
+  transform: translateY(0.3vmax);
+  box-shadow: 0 0.2vmax  #2c6470;
+  transition: 0.3s;
+}
+
+.block .start-button:active {
+  transform: translateY(0.5vmax);
+  transition: 0.3s;
+  box-shadow: none;
+}
+
+.block .project-image {
+  position: absolute;
+  height: 27vmax;
+  width: auto;
+  top: 31%;
+  left: 0%;
+  z-index: 9;
+  border: 0.1vmax solid #B9B9B9;
+  border-radius: 0.5em;
+  box-shadow: 0.4vmax 0.4vmax 0.2vmax rgba(0, 0, 0, 0.3);
+}
+
+.block .dots1 {
+  position: absolute;
+  height: 38vmax;
+  width: auto;
+  top: 20%;
+  left: 17%;
+}
+
+.block2 {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  background-color: #C3F5FF;
+}
+
+.block2 .description-block {
+  position: relative;
+  width: 50%;
+}
+
+.block2 .image-block {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.block2 .title-text-h1 {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+
+.block2 .description-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+.block2 .course-list {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 70%;
+  left: 15%;
+  border-bottom: 0.2vmax solid white;
+  z-index: 2;
+}
+
+.buttonUnderline {
+  position: relative;
+  white-space: nowrap;
+  height: 2vmax;
+  margin-left: 0.8vmax;;
+  font-size: 1.2vmax;
+  font-weight: bolder;
+  font-family: 'Tsukushi A Round Gothic';
+  color: #00D1FF;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background: transparent;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#course1 {
+  margin-left: 0;
+}
+
+.buttonUnderline::after {
+  position: absolute;
+  display: block;
+  bottom: -0.2vmax;
+  left: 0;
+  width: 100%;
+  height: 0.3vmax;
+  content: "";
+  background-color: #ffb700;
+  border-radius: 0.5vmax;
+  transform: scaleX(0);
+  transform-origin: right top;
+  z-index: 11;
+}
+
+.buttonUnderline.active::after {
+  transform: scaleX(1);
+}
+
+@media (any-hover: hover) {
+  .buttonUnderline::after {
+    transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .buttonUnderline:hover::after {
+    transition: transform 0.4s cubic-bezier(0.9, 0, 0, 1);
+    transform: scaleX(1);
+    transform-origin: left top;
+  }
+}
+
+.mask {
+  position: absolute;
+  display: block;
+  top: 80%;
+  left: 20%;
+  right: auto;
+  line-height: 1.5;
+  font-size: 1vmax;
+  font-family: 'Tsukushi A Round Gothic';
+  font-weight: bold;
+  color: #5f5f5f;
+  text-align: left;
+  opacity: 0;
+  -webkit-transition:	all 0.5s ease;
+	transition:		all 0.5s ease;
+}
+
+.block2 .wolfin-boy {
+  position: absolute;
+  top: 20%;
+  left: -5%;
+  height: 26vmax;
+  width: auto;
+  z-index: 7;
+}
+
+.block2 .wolfin-boy-name {
+  position: absolute;
+  top: 28%;
+  left: 39%;
+  font-size: 2.5vmax;
+  font-family: 'Kaisei Opti';
+  color: #00D1FF;
+  text-shadow: 0 0.2vmax #B9B9B9;
+  -webkit-text-stroke: 0.1vmax #00D1FF;
+}
+
+.block2 .wolfin-boy-intro {
+  position: absolute;
+  top: 40%;
+  left: 28%;
+  font-size: 1.2vmax;
+  font-family: 'Hiragino Maru Gothic ProN';
+  color:  rgba(0, 0, 0, 0.6);
+  line-height: 2vmax;
+  background-color: rgba(234, 251, 255, 0.5);
+  display: block;
+  padding: 1.5vmax 0.5vmax 1.5vmax 6vmax;
+}
+
+.block3 {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.block3 .description-block {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+}
+
+.block3 .title-text-h1 {
+  position: relative;
+  top: 200%;
+  font-size: 2.5vmax;
+}
+
+.block3 .description-text {
+  position: absolute;
+  top: 400%;
+  left: 34%;
+  font-size: 1.3vmax;
+}
+
+.block3 .image-block {
+  z-index: 8;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: 43%;
+  justify-content: center;
+  gap: 0 5%;
+}
+
+.block3 .project-image {
+  z-index: 9;
+  border: 0.1vmax solid #B9B9B9;
+  border-radius: 0.5em;
+  box-shadow: 0.4vmax 0.4vmax 0.2vmax rgba(0, 0, 0, 0.3);
+  height: 17vmax;
+  width: auto;
+}
+
+.block3 .image-block2 {
+  z-index: 8;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: 39%;
+  left: -15%;
+  justify-content: center;
+  gap: 0 5%;
+}
+
+.block3 .image-block3 {
+  z-index: 8;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: 45%;
+  justify-content: center;
+  gap: 0 5%;
+
+}
+
+.block3 .project-image3 {
+  z-index: 9;
+  border: 0.1vmax solid #B9B9B9;
+  border-radius: 0.5em;
+  box-shadow: 0.4vmax 0.4vmax 0.2vmax rgba(0, 0, 0, 0.3);
+  height: 28vmax;
+  width: auto;
+}
+
+.dots2 {
+  position: relative;
+  width: 68%;
+  top: -14%;
+  left: 18%;
+}
+
+#last-block3 {
+  margin-bottom: 15%;
+}
+
+.block4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #C3F5FF;
+  position: relative;
+}
+
+.block4 .title-text-h1 {
+  position: absolute;
+  top: 15%;
+}
+
+.block4 .animal-list {
+  position: absolute;
+  top: 35%;
+  display: flex;
+  flex-direction: row;
+  gap: 12vmax;
+}
+
+.animal-list img {
+  height: 10vmax;
+}
+
+.block4 .mask2 {
+  position: absolute;
+  top: 60%;
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  height: 35%;
+  opacity: 0;
+  -webkit-transition:	all 0.5s ease-out;
+	transition:		all 0.5s ease-out;
+}
+
+.mask2 .career {
+  position: relative;
+  width: 50%;
+  background-color: rgba(234, 251, 255, 0.5);
+  left: 10%;
+  height: 100%;
+}
+
+.career-title {
+  position: relative;
+  left: 5%;
+  top: 10%;
+  font-size: 2.5vmax;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  color: #00D1FF;
+  font-weight: bold;
+}
+
+#course2 .career-title {
+  color: #ffb700;
+}
+
+#course3 .career-title {
+  color: #ff5028;
+}
+
+#course4 .career-title {
+  color: #c66f2c;
+}
+
+.career-description {
+  position: relative;
+  left: 5%;
+  top: 20%;
+  font-size: 1.5vmax;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  width: 87%;
+  line-height: 2.3vmax;
+}
+
+.mask2 .catalog {
+  width: 22%;
+  position: relative;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-example {
+  position: relative;
+  left: 5%;
+  top: 5%;
+  font-size: 1.8vmax;
+  font-family: 'Hiragino Kaku Gothic ProN';
+  width: 87%;
+  font-weight: bold;
+}
+
+.course-example-title {
+  position: relative;
+  left: 5%;
+  top: 15%;
+  font-size: 1.4vmax;
+  font-family: 'Tsukushi A Round Gothic';
+  color: #00D1FF;
+  font-weight: bold;
+}
+
+#course2 .course-example-title {
+  color: #ffb700;
+}
+
+#course3 .course-example-title {
+  color: #ff5028;
+}
+
+#course4 .course-example-title {
+  color: #c66f2c;
+}
+
+.course-example-description {
+  position: relative;
+  left: 5%;
+  top: 28%;
+  font-size: 1.1vmax;
+  font-family: 'Tsukushi A Round Gothic';
+  font-weight: bold;
+  width: 90%;
+}
+
+.course-example1 {
+  position: relative;
+  left: 5%;
+  top: 13%;
+  width: 100%;
+  height: 36%;
+  background-color: #ffffff;
+  border-radius: 0.7vmax;
+  box-shadow: 0.2vmax 0.2vmax rgba(0, 0, 0, 0.5);
+}
+
+.course-example2 {
+  position: relative;
+  left: 5%;
+  top: 18%;
+  width: 100%;
+  height: 36%;
+  background-color: #ffffff;
+  border-radius: 0.7vmax;
+  box-shadow: 0.2vmax 0.2vmax rgba(0, 0, 0, 0.5);
+}
+
+.block4 .wolf-image:hover {
+	background-position: right center;
+	background-size: 200% auto;
+  border-radius: 100%;
+	-webkit-animation: pulse 2s infinite;
+	animation: shad1 1.5s infinite;
+	color: #fff;
+}
+
+@keyframes shad1 {
+	0% {box-shadow: 0 0 0 0 #00D1FF;}
+	70% {box-shadow: 0 0 0 1vmax rgb(39 172 217 / 0%);}
+	100% {box-shadow: 0 0 0 0 rgb(39 172 217 / 0%);}
+}
+
+.block4 .cat-image:hover {
+	background-position: right center;
+	background-size: 200% auto;
+  border-radius: 100%;
+	-webkit-animation: pulse 2s infinite;
+	animation: shad2 1.5s infinite;
+	color: #fff;
+}
+
+@keyframes shad2 {
+	0% {box-shadow: 0 0 0 0 #FFD600;}
+	70% {box-shadow: 0 0 0 1.2vmax rgb(39 172 217 / 0%);}
+	100% {box-shadow: 0 0 0 0 rgb(39 172 217 / 0%);}
+}
+
+.block4 .tiger-image:hover {
+	background-position: right center;
+	background-size: 200% auto;
+  border-radius: 100%;
+	-webkit-animation: pulse 2s infinite;
+	animation: shad3 1.5s infinite;
+	color: #fff;
+}
+
+@keyframes shad3 {
+	0% {box-shadow: 0 0 0 0 #FF3205;}
+	70% {box-shadow: 0 0 0 1vmax rgb(39 172 217 / 0%);}
+	100% {box-shadow: 0 0 0 0 rgb(39 172 217 / 0%);}
+}
+
+.block4 .deer-image:hover {
+	background-position: right center;
+	background-size: 200% auto;
+  border-radius: 100%;
+	-webkit-animation: pulse 2s infinite;
+	animation: shad4 1.5s infinite;
+	color: #fff;
+}
+
+@keyframes shad4 {
+	0% {box-shadow: 0 0 0 0 #D17D00;}
+	70% {box-shadow: 0 0 0 1vmax rgb(39 172 217 / 0%);}
+	100% {box-shadow: 0 0 0 0 rgb(39 172 217 / 0%);}
+}
+
+.block3 #ending-block {
+  font-size: 10vmax;
+}
+
+.block5 {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.block5 .description-block {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+}
+
+.block5 .title-text-h1 {
+  position: relative;
+  top: 200%;
+  font-size: 3.5vmax;
+}
+
+.block5 .description-text {
+  position: absolute;
+  top: 400%;
+  font-size: 1.3vmax;
+}
+
+.block5 .waitlist-button {
+  text-decoration: none;
+  position: absolute;
+  top: 520%;
+  margin: auto 2% auto 0;
+  padding: 1.2em 2.8em;
+  border-radius: 0.5em;
+  font-size: 1.3vmax;
+  color: #ffffff;
+  font-family: "Toppan Bunkyu Midashi Gothic";
+  background-color: rgb(255, 183, 0);
+  box-shadow: 0 0.7vmax rgb(139, 100, 0);  
+}
+
+.block5 .waitlist-button:hover {
+  transform: translateY(0.4vmax);
+  box-shadow: 0 0.4vmax  rgb(139, 100, 0);
+  transition: 0.3s;
+}
+
+.block5 .waitlist-button:active {
+  transform: translateY(0.7vmax);
+  transition: 0.3s;
+  box-shadow: none;
+}
+
+footer .logo-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 0.2vmax;
+  left: 2%;
+}
+
+footer .logo2 {
+  height: 2.5vmax;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  position: relative;
+  font-size: 0.5vmax;
+  top: 0.1vmax;
+  left: 1.8vmax;
+  font-family: 'Aksara Bali Galang';
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer .c-logo {
+  font-size: 0.8vmax;
+}
+
+footer .sns-wrap {
+  right: 3%;
+  left: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 4vmax;
+}
+
+footer img {
+  height: 2vmax;
+}
+
+footer .x-logo {
+  height: 1.8vmax;
+}
